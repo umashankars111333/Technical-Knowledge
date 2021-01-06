@@ -1,0 +1,58 @@
+Deploy Project in to Github
+
+Part-1
+
+1. Run the Command in GitBash (if u dont have git bash, install gitbash)
+
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+---> It will create one ssh key in ur local machine path (C:\Users\u722187\.ssh)
+----> Open the second file in notepad and copy the key.
+
+
+2. Open ur github, settings -> SSH Key --> give some name and paste the key -> save.
+
+
+Part-2
+
+1.https://cli.vuejs.org/guide/deployment.html#platform-guides (Platform guides -> githubpages)
+
+2. copy the 1st clip of code , create vue.config.js file and paste that code.
+
+3. change the code -> my-project to our-repository name (git)
+
+4. copy the 2nd clip of code , create deploy.sh file and paste that here
+
+5. change the code -> username and repository
+
+6. change the commit message if u want .
+
+part-3
+
+1. open our project folder files and right click git bash here
+2. .\deploy.sh
+
+
+
+
+
+Commit the files into the github 
+
+open GitBash
+
+1. git config --global user.name "FIRST_NAME LAST_NAME"
+2. git config --global user.email "OUR_NAME@example.com"
+3. git config user.name
+4. git config user.email
+5. in left icons in visual studio, select tree and add (select '+') and add message and select tick mark.
+6. if it ask branch or master, type 'origin'
+7. in bottom bar, click upload git or update,(round icon).
+
+//Master or create origin
+git init
+git branch -M main
+git remote add origin https://github.com/<<user>>/<<repo>>.git
+
+
+
+
